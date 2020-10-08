@@ -138,17 +138,18 @@ def GetUserJson(deptId,text,stuNum,userName,RuleId,templateid):
         "method": "submitUpInfoSchool",
         "jsonData": {
         "deptStr": {
-            "deptid": deptId,
-            "text": text
+            "deptid": 71899,
+            "text": 中英国际学院(软件学院)-计算机类( 专科 )-计专1908
+
         },
-        "areaStr": {"streetNumber":"","street":"林山寨街道","district":"中原区","city":"郑州市","province":"河南省","town":"","pois":"河南工业大学(嵩山路校区)","lng":113.62031809999795 + random.random()/1000,"lat":34.74250116238093 + random.random()/1000,"address":"中原区林山寨街道嵩山南路142号河南工业大学(嵩山路校区)","text":"河南省-郑州市","code":""},
+        "areaStr": {"streetNumber":"128附9","street":"伊河路","district":"中原区","city":"郑州市","province":"河南省","town":"","pois":"伊河路17号院","lng":113.63189699999617 + random.random()/1000,"lat":34.74878097249976 + random.random()/1000,"address":"中原区伊河路128附9伊河路17号院","text":"河南省-郑州市","code":""},
         "reportdate": round(time.time()*1000),
         "customerid": "43",
-        "deptid": deptId,
+        "deptid": 71899,
         "source": "app",
         "templateid": templateid,
-        "stuNo": stuNum,
-        "username": userName,
+        "stuNo": 201930910815,
+        "username": 何亚飞,
         "userid": round(time.time()),
         "updatainfo": [  
             {
