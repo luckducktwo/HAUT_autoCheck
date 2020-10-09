@@ -89,10 +89,10 @@ def main():
                     print('%s打卡失败，开始第%d次重试...'%(value[-6:],count))
                     time.sleep(15)
                 
-                
             except:
                 print("服务器错误！")
                 failure.append(value[-6:])
+                msg = "请仔细检查USERS!"
                 break
         print(msg)
         print("-----------------------")
@@ -139,18 +139,17 @@ def GetUserJson(deptId,text,stuNum,userName,RuleId,templateid):
         "method": "submitUpInfoSchool",
         "jsonData": {
         "deptStr": {
-            "deptid": 71899,
-            "text": "中英国际学院(软件学院)-计算机类( 专科 )-计专1908"
-
+            "deptid": deptId,
+            "text": text
         },
-        "areaStr": {"streetNumber":"128附9","street":"伊河路","district":"中原区","city":"郑州市","province":"河南省","town":"","pois":"伊河路17号院","lng":113.63189699999617 + random.random()/1000,"lat":34.74878097249976 + random.random()/1000,"address":"中原区伊河路128附9伊河路17号院","text":"河南省-郑州市","code":""},
+"areaStr": {"streetNumber":"128附9","street":"伊河路","district":"中原区","city":"郑州市","province":"河南省","town":"","pois":"伊河路17号院","lng":113.63189699999617 + random.random()/1000,"lat":34.74878097249976 + random.random()/1000,"address":"中原区伊河路128附9伊河路17号院","text":"河南省-郑州市","code":""},
         "reportdate": round(time.time()*1000),
         "customerid": "43",
-        "deptid": 71899,
+        "deptid": deptId,
         "source": "app",
         "templateid": templateid,
-        "stuNo": 201930910815,
-        "username": 何亚飞,
+        "stuNo": stuNum,
+        "username": userName,
         "userid": round(time.time()),
         "updatainfo": [  
             {
