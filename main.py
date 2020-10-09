@@ -207,3 +207,5 @@ def WechatPush(title,sckey,success,fail,result):
         print("微信推送参数错误")
 if __name__ == '__main__':
     main()
+
+    
