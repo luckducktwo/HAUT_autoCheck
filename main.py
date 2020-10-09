@@ -89,6 +89,7 @@ def main():
                     print('%s打卡失败，开始第%d次重试...'%(value[-6:],count))
                     time.sleep(15)
                 
+                
             except:
                 print("服务器错误！")
                 failure.append(value[-6:])
