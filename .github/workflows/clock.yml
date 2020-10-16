@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: 50 3 * * * 
+    - cron: 30 3 * * * 
 
 jobs:
   build:
@@ -15,16 +15,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
-    - name: Install Python3
-      run: |
-        sudo apt update && \
-        sudo apt install python3
-   
+       
     - name: requirements
       run: |
         pip3 install -r requirements.txt
-  
+    - name: Install Python3	
+      run: |	
+        sudo apt update && \	
+        sudo apt install python3  
+      continue-on-error: true
+    
     - name: Run
       run: |
         python3 main.py <<EOF
