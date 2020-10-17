@@ -19,6 +19,7 @@ jobs:
     - name: requirements
       run: |
         pip3 install -r requirements.txt
+
     - name: Install Python3	
       run: |	
         sudo apt update && \	
